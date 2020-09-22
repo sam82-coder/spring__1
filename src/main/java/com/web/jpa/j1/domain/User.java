@@ -4,8 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+
 @Entity
-public class User {
+public class User  implements IModel{
 	
 	
 	@Id
@@ -79,6 +80,14 @@ public class User {
 	public String toString() {
 		// TODO Auto-generated method stub
 		return super.toString();
+	}
+
+
+
+	@Override
+	public IModel setUser(User user) {
+		return this;
+		
 	}
 	
 
